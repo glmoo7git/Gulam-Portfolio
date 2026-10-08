@@ -305,24 +305,10 @@
                 src="./profile.jpg"
                 alt="Gulam Ahmed Raza - Technical Project Manager"
                 class="w-[90%] sm:w-[86%] h-auto object-cover object-top filter contrast-[1.03] brightness-[1.0] transition-transform duration-700 hover:scale-[1.02] translate-y-2 sm:translate-y-4"
-                onerror="this.src='./src/assets/images/profile_cutout_clean_1791318029903.jpg'"
+                onerror="this.src='./src/assets/images/profile_preview_actual_1791434709383.jpg'"
               />
               <!-- Subtle blend gradient at bottom of circular cut -->
               <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#110e0b] via-[#110e0b]/60 to-transparent pointer-events-none"></div>
-            </div>
-
-            <!-- Custom Photo File Picker -->
-            <div class="absolute -bottom-2 right-4 z-20 opacity-80 hover:opacity-100 transition-opacity">
-              <label class="cursor-pointer flex items-center gap-1.5 px-3 py-1.5 bg-[#17120d]/90 backdrop-blur border border-[#4d3626] rounded-full text-[11px] text-[#ff6b00] hover:text-white shadow-lg">
-                <i class="fa-solid fa-camera text-[10px]"></i>
-                <span>Custom Photo</span>
-                <input
-                  type="file"
-                  accept="image/*"
-                  onchange="handleCustomPhotoUpload(event)"
-                  class="hidden"
-                />
-              </label>
             </div>
           </div>
         </div>
@@ -1506,18 +1492,6 @@
           }, 2000);
         }
       });
-    }
-
-    function handleCustomPhotoUpload(e) {
-      const file = e.target.files && e.target.files[0];
-      if (file) {
-        const reader = new FileReader();
-        reader.onload = function(evt) {
-          const img = document.getElementById('hero-profile-img');
-          if (img) img.src = evt.target.result;
-        };
-        reader.readAsDataURL(file);
-      }
     }
 
     function handleContactSubmit(e) {

@@ -168,8 +168,8 @@ export const getFullStandaloneHtml = (): string => {
             <!-- Cutout Profile Container -->
             <div class="relative z-10 w-full h-full flex items-end justify-center overflow-hidden rounded-full">
               <img
-                src="portrait.png"
-                alt="Gulam Ahmed Raza"
+                src="./profile.jpg"
+                alt="Gulam Ahmed Raza - Technical Project Manager"
                 class="w-[88%] h-auto object-cover object-top filter contrast-[1.03] translate-y-3"
               />
             </div>

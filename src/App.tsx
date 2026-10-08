@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import profileCutoutImg from './assets/images/profile_cutout_clean_1791318029903.jpg';
+import profileCutoutImg from './assets/images/profile_preview_actual_1791434709383.jpg';
 import { getFullStandaloneHtml } from './standaloneHtml.ts';
 
 interface WorkExpItem {
@@ -464,20 +464,6 @@ export default function App() {
                   />
                   {/* Subtle blend gradient at bottom of circular cut */}
                   <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#110e0b] via-[#110e0b]/60 to-transparent pointer-events-none"></div>
-                </div>
-
-                {/* Quick Photo Customizer Action */}
-                <div className="absolute -bottom-2 right-4 z-20 opacity-80 hover:opacity-100 transition-opacity">
-                  <label className="cursor-pointer flex items-center gap-1.5 px-3 py-1.5 bg-[#17120d]/90 backdrop-blur border border-[#4d3626] rounded-full text-[11px] text-[#ff6b00] hover:text-white shadow-lg">
-                    <i className="fa-solid fa-camera text-[10px]"></i>
-                    <span>Select Photo</span>
-                    <input
-                      type="file"
-                      accept="image/*"
-                      onChange={handleImageUpload}
-                      className="hidden"
-                    />
-                  </label>
                 </div>
               </div>
             </div>
